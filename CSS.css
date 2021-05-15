@@ -1,1 +1,24 @@
-Hi
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr 1.1fr 1.1fr 1.1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Header1 Header1 Header1 Header1 Header1"
+      "Navbar1 Navbar1 Navbar1 Navbar1 Navbar1"
+      "Logo1 Logo1 WelcomeMessage WelcomeMessage WelcomeMessage"
+      "Logo1 Logo1 Timetable1 Timetable1 Timetable1"
+      "Logo1 Logo1 Timetable1 Timetable1 Timetable1"
+      "Logo1 Logo1 Timetable1 Timetable1 Timetable1";
+  }
+  
+  .Header1 { grid-area: Header1; }
+  
+  .Navbar1 { grid-area: Navbar1; }
+  
+  .WelcomeMessage { grid-area: WelcomeMessage; }
+  
+  .Timetable1 { grid-area: Timetable1; }
+  
+  .Logo1 { grid-area: Logo1; }
+  
