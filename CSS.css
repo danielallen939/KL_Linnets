@@ -1,8 +1,14 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.7fr 1.1fr 1.1fr 1.1fr 1fr;
-    gap: 0px 0px;
+    gap: 10px 0px;
     grid-template-areas:
       "Header1 Header1 Header1 Header1 Header1"
       "Navbar1 Navbar1 Navbar1 Navbar1 Navbar1"
@@ -12,13 +18,61 @@
       "Logo1 Logo1 Timetable1 Timetable1 Timetable1";
   }
   
-  .Header1 { grid-area: Header1; }
+.Header1 { grid-area: Header1; 
+    font-family: "Arial";
+    font-size: 24px;
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
   
-  .Navbar1 { grid-area: Navbar1; }
+.Navbar1 { grid-area: Navbar1; 
+    overflow: hidden;
+    background-color: #333;
+    height: 50px;
+}
+
+.Navbar1 a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: Adobe Gothic STD B;
+    font-size: 20px;
+    padding: 14px 16px;
+}
+
+.Navbar1 a:hover {
+    background-color: #ddd;
+    color:black;
+    height: 50px;
+}
   
-  .WelcomeMessage { grid-area: WelcomeMessage; }
+  .WelcomeMessage { grid-area: WelcomeMessage; 
+    font-size: 30px;
+}
   
   .Timetable1 { grid-area: Timetable1; }
   
-  .Logo1 { grid-area: Logo1; }
+  .Logo1 { grid-area: Logo1; 
+    margin-top: 100px;
+    margin-left: 50px;
+}
   
+div.background {
+	background: linear-gradient(rgb(98, 153, 255), rgb(255, 255, 96));
+	height: 100%;
+    width:100%;
+}
+
+body {
+    width:100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.Navbar1 {
+    width: 100%;
+    margin: 20px 0;
+}
