@@ -105,3 +105,25 @@ body {
       opacity: 0%;
     }
   }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    margin-top: 250px;
+    margin-right: 50px;
+  }
+  
+  td, th {
+    border: 3px solid #000000;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #6580fa;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #fff45c;
+  }
