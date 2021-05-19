@@ -19,165 +19,286 @@
   }
   
 .Header1 { grid-area: Header1; 
-    font-family: "Arial";
-    font-size: 24px;
-    height: 50px;
-    text-align: center;
-    margin-top: 50px;
+  font-family: "Arial";
+  font-size: 24px;
+  height: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
   
 .Navbar1 { grid-area: Navbar1; 
-    overflow: hidden;
-    background-color: rgb(46, 46, 46);
-    height: 50px;
+  overflow: hidden;
+  background-color: rgb(46, 46, 46);
+  height: 50px;
+  margin-top: 15px;
 }
 
 .Navbar1 a{
-    float: left;
-    display: block;
-    color: #5162fd;
-    text-align: center;
-    font-family: Adobe Gothic STD B;
-    font-size: 20px;
-    padding: 14px 16px;
+  float: left;
+  display: block;
+  color: #5162fd;
+  text-align: center;
+  font-family: Adobe Gothic STD B;
+  font-size: 20px;
+  padding: 14px 116.90px;
 }
 
 .Navbar1 a:hover {
-    background-color: #ddd;
-    color:black;
-    height: 50px;
+  background-color: #ddd;
+  color:black;
+  height: 50px;
 }
   
-  .WelcomeMessage { grid-area: WelcomeMessage; 
-    font-size: 30px;
+.WelcomeMessage { grid-area: WelcomeMessage; 
+  font-size: 30px;
 }
   
-  .Timetable1 { grid-area: Timetable1; }
+.Timetable1 { grid-area: Timetable1; 
+}
   
-  .Logo1 { grid-area: Logo1; 
-    margin-top: 100px;
-    margin-left: 50px;
+.Logo1 { grid-area: Logo1; 
+  margin-top: 100px;
+  margin-left: 50px;
 }
   
 div.background {
 	background: linear-gradient(rgb(0, 112, 192), rgb(255, 255, 90));
 	height: 100%;
-    width:100%;
+  width:100%;
 }
 
 body {
-    width:100%;
-    max-width: 1920px;
-    margin: 0 auto;
+  width:100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .Navbar1 {
-    width: 100%;
-    margin: 20px 0;
+  width: 100%;
 }
 
 .WelcomeMessage {
-    position: absolute;
-    left: 700px;
-    top: 250px;
+  position: absolute;
+  left: 700px;
+  top: 250px;
+  opacity: 0;
+  color: #262626;
+  animation-name: fadeInOut;
+  animation-delay: 2s;
+  animation-duration: 10s;
+}
+  
+@keyframes fadeInOut {
+  0% {
     opacity: 0;
-    color: #262626;
-    animation-name: fadeInOut;
-    animation-delay: 2s;
-    animation-duration: 10s;
   }
   
-  @keyframes fadeInOut {
-    0% {
-      opacity: 0;
-    }
-  
-    25% {
-      opacity: 100;
-    }  
+  25% {
+    opacity: 100;
+  }  
     
-    45% {
-      opacity: 100;
-    }
-  
-    100% {
-      opacity: 0%;
-    }
+  45% {
+    opacity: 100;
   }
+  
+  100% {
+    opacity: 0%;
+  }
+}
 
-  table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 75%;
-    margin-top: 250px;
-    margin-right: 50px;
-  }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+  margin-top: 250px;
+  margin-right: 50px;
+}
   
-  td, th {
-    border: 3px solid #000000;
-    text-align: left;
-    padding: 15px;
-  }
+td, th {
+  border: 3px solid #000000;
+  text-align: left;
+  padding: 15px;
+}
   
-  tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: #6580fa;
   }
 
-  tr:nth-child(odd) {
+tr:nth-child(odd) {
     background-color: #fff45c;
   }
 
-  .grid-container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1.4fr 0.7fr 1fr 1fr 1fr;
-    gap: 5px 0px;
-    grid-template-areas:
-      "Header2 Header2 Header2 Header2 Header2 Header2 Header2"
-      "Navbar2 Navbar2 Navbar2 Navbar2 Navbar2 Navbar2 Navbar2"
-      "Information2 Information2 Information2 Information2 Location2 Location2 Location2"
-      "Information2 Information2 Information2 Information2 Location2 Location2 Location2"
-      "Information2 Information2 Information2 Information2 Location2 Location2 Location2";
-  }
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.1fr 0.7fr 1fr 1fr 1fr;
+  gap: 0px 5px;
+  grid-template-areas:
+    "Header2 Header2 Header2 Header2 Header2 Header2 Header2"
+    "Navbar2 Navbar2 Navbar2 Navbar2 Navbar2 Navbar2 Navbar2"
+    "Information2 Information2 Information2 Information2 Location2 Location2 Location2"
+    "Information2 Information2 Information2 Information2 Location2 Location2 Location2"
+    "Information2 Information2 Information2 Information2 Location2 Location2 Location2";
+}
   
-  .Header2 { grid-area: Header2; 
-    font-family: "Arial";
-    font-size: 24px;
-    height: 50px;
-    text-align: center;
-    margin-top: 50px;
-  }
+.Header2 { grid-area: Header2; 
+  font-family: "Arial";
+  font-size: 24px;
+  height: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
   
-  .Navbar2 { grid-area: Navbar2; 
-    overflow: hidden;
-    background-color: rgb(46, 46, 46);
-    height: 50px;
+.Navbar2 { grid-area: Navbar2; 
+  overflow: hidden;
+  background-color: rgb(46, 46, 46);
+  height: 50px;
 }
 
 .Navbar2 a{
-    float: left;
-    display: block;
-    color: #5162fd;
-    text-align: center;
-    font-family: Adobe Gothic STD B;
-    font-size: 20px;
-    padding: 14px 16px;
+  float: left;
+  display: block;
+  color: #5162fd;
+  text-align: center;
+  font-family: Adobe Gothic STD B;
+  font-size: 20px;
+  padding: 14px 117.70px;
 }
 
 .Navbar2 a:hover {
-    background-color: #ddd;
-    color:black;
-    height: 50px;
+  background-color: #ddd;
+  color:black;
+  height: 50px;
 }
   
-  .Information2 { grid-area: Information2; 
+.Information2 { grid-area: Information2; 
   font-family: Adobe Gothic STD B;
   margin-left: 10px;
   font-size: 26px;
+}
+  
+.Location2 { grid-area: Location2; 
+  margin-top: 30px;
+}
+  
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 0px;
+  grid-template-areas:
+    "Logo3 Header3 Header3 Header3 Header3 Header3 Header3 Header3 Header3 Header3 Header3 Header3"
+    "Navbar3 Navbar3 Navbar3 Navbar3 Navbar3 Navbar3 Navbar3 Navbar3 Navbar3 Navbar3 Navbar3 Navbar3"
+    "Team1 Team1 Team2 Team2 Team3 Team3 Team4 Team4 Team5 Team5 Team6 Team6"
+    "Team1 Team1 Team2 Team2 Team3 Team3 Team4 Team4 Team5 Team5 Team6 Team6"
+    "Team1 Team1 Team2 Team2 Team3 Team3 Team4 Team4 Team5 Team5 Team6 Team6"
+    "Team1 Team1 Team2 Team2 Team3 Team3 Team4 Team4 Team5 Team5 Team6 Team6"
+    "Team1 Team1 Team2 Team2 Team3 Team3 Team4 Team4 Team5 Team5 Team6 Team6";
+}
+  
+.Navbar3 { grid-area: Navbar3; 
+  overflow: hidden;
+  background-color: rgb(46, 46, 46);
+  height: 50px;
+  margin-top: 50px;
+}
+
+.Navbar3 a{
+  float: left;
+  display: block;
+  color: #5162fd;
+  text-align: center;
+  font-family: Adobe Gothic STD B;
+  font-size: 20px;
+  padding: 14px 113.95px;
+}
+
+.Navbar3 a:hover {
+  background-color: #ddd;
+  color:black;
+  height: 50px;
+}
+  
+.Header3 { grid-area: Header3; 
+  font-family: "Arial";
+  font-size: 24px;
+  height: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-right: 250px;
+}
+  
+.Logo3 { grid-area: Logo3; 
+  margin-left: 10px;
+  margin-top: 10px;
   }
   
-  .Location2 { grid-area: Location2; 
-  margin-top: 30px;
-  }
+.Team1 { grid-area: Team1; }
+  
+.Team2 { grid-area: Team2; }
+  
+.Team3 { grid-area: Team3; }
+  
+.Team4 { grid-area: Team4; }
+  
+.Team5 { grid-area: Team5; }
+  
+.Team6 { grid-area: Team6; }
+
+.grid-container5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header5 Header5 Header5 Header5 Header5 Header5 Header5 Header5 Header5"
+    "Navbar5 Navbar5 Navbar5 Navbar5 Navbar5 Navbar5 Navbar5 Navbar5 Navbar5"
+    "Picture5 Picture5 Picture5 NewsFeed5 NewsFeed5 NewsFeed5 Logo Logo Logo"
+    "Picture5 Picture5 Picture5 NewsFeed5 NewsFeed5 NewsFeed5 Logo Logo Logo"
+    "Picture5 Picture5 Picture5 NewsFeed5 NewsFeed5 NewsFeed5 Logo Logo Logo";
+}
+  
+.Header5 { grid-area: Header5; 
+  font-family: "Arial";
+  font-size: 24px;
+  height: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+  
+.Navbar5 { grid-area: Navbar5; 
+  overflow: hidden;
+  background-color: rgb(46, 46, 46);
+  height: 50px;
+  margin-top: 20px;
+}
+
+.Navbar5 a{
+  float: left;
+  display: block;
+  color: #5162fd;
+  text-align: center;
+  font-family: Adobe Gothic STD B;
+  font-size: 20px;
+  padding: 14px 113.45px;
+}
+
+.Navbar5 a:hover {
+  background-color: #ddd;
+  color:black;
+  height: 50px;
+}
+  
+.Picture5 { grid-area: Picture5; 
+margin-top: 100px;
+margin-left: 50px;
+}
+  
+.NewsFeed5 { grid-area: NewsFeed5; }
+  
+.Logo { grid-area: Logo; 
+margin-top: 100px;
+margin-left: 75px;
+}
   
