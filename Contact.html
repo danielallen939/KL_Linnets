@@ -3,8 +3,44 @@
         <title>Contact Us</title>
         <link rel="stylesheet" type="text/css" href="CSS.css">
     </head>
+    <div class="background">
     <body>
+        <div class="grid-container6">
+            <div class="Header6"><h1>Contact Us</h1></div>
+            <div class="Navbar6">
+                <a href="index.html">Homepage</a>
+                <a href="Information.html">Information</a>
+                <a href="News.html">News</a>
+                <a href="ClubAchievments.html">Club Achievements</a>
+            </div>
+            <div class="Contact6">
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
         
+                    <div class="fcf-form-group">
+                        <label for="Name" class="fcf-label"><b>Your name</b></label></label>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label"><b>Your email address</b></label>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label"><b>Your message</b></label>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                        </div>
+                    </div>
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                    </div>
+            </div>
+        </div>
+    </div>
     </body>
-
 </html>
